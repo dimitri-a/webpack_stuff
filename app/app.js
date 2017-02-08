@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 /*
  * A simple React component
  */
-class Applications extends React.Component {
+class Application extends React.Component {
     render() {
         console.log('testing ')
         return <div>
-            <h1>Hello, ES6 w React 0.13!</h1>
+            <h1>Hellossss, ES6 w React 0.13!</h1>
 
         </div>;
     }
@@ -17,4 +17,4 @@ class Applications extends React.Component {
 /*
  * Render the above component into the div#app
  */
-React.render(<Application />, document.getElementById('root'));
+ReactDOM.render(<Application />, document.getElementsByTagName("body")[0]);
