@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+// var WebpackStrip = require('strip-loader');
 
 module.exports = {
     entry: './app/app.js',
@@ -21,8 +22,20 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
-            },
-            { test: /\.js$/, loader: "strip-loader?strip[]=debug,strip[]=console.log" }
+            }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true,
+            sourceMap: true,
+            warnings: true,
+            mangle: true,
+            compress: {
+                drop_console: true,
+                drop_debugger:true
+            }
+        })
+    ]
+
 }
