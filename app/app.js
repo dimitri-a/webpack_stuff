@@ -9,7 +9,7 @@ class Application extends React.Component {
         debugger
         console.log('testing ')
         return <div>
-            <h1>gggg, ES6 w React 0.13!</h1>
+            <h1>gggg, ES6 w Readadsact 0.13!</h1>
 
         </div>;
     }

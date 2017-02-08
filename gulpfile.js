@@ -16,7 +16,7 @@ gulp.task('webpack', [], function() {
 gulp.task('webpack-dev-server', function (c) {
     var myConfig = Object.create(webpackConfig);
 
-    myConfig.devtool = 'eval';
+    //myConfig.devtool = 'eval';
     //myConfig.debug = true;
 
     // Start a webpack-dev-server
@@ -28,7 +28,7 @@ gulp.task('webpack-dev-server', function (c) {
         if (err) {
             throw new gutil.PluginError('webpack-dev-server', err);
         }
-        gutil.log('[webpack-dev-server]', 'http://localhost:8080/index.html');
+        gutil.log('[webpack-dev-server]', 'http://localhost:8080/bundletje');
     });
 });
 
@@ -47,3 +47,5 @@ var path = {
 
 //dev environment run
 gulp.task('default', ['webpack-dev-server']);
+
+console.log('testing process.env.NODE_ENV',process.env.NODE_ENV)
