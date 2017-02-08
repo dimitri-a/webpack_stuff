@@ -6,9 +6,9 @@ import ReactDOM from 'react-dom';
  */
 class Application extends React.Component {
     render() {
-        console.log('testing ')
+        console.log('testing hjhjhjhjh')
         return <div>
-            <h1>Hellossss, ES6 w React 0.13!</h1>
+            <h1>gggg, ES6 w React 0.13!</h1>
 
         </div>;
     }

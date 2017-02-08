@@ -5,7 +5,7 @@ module.exports = {
     entry: './app/app.js',
     output: {
         path: __dirname + '/dist',
-        filename: 'bundle.js'
+        filename: 'bundletje.js'  //TODO this corresponds with the url:localhost:8080/bundletje
     },
     devServer: {
         inline: true,
