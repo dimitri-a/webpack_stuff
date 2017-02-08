@@ -21,7 +21,8 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
-            }
+            },
+            { test: /\.js$/, loader: "strip-loader?strip[]=debug,strip[]=console.log" }
         ]
     }
 }
